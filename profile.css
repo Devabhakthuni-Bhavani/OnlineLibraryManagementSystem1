@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f5ef;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4b2e2e;
+  color: white;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Profile Section */
+main {
+  flex: 1;
+}
+
+.profile-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.edit-btn {
+  color: #1e56a0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-btn i {
+  margin-right: 5px;
+}
+
+.profile-field {
+  margin-bottom: 20px;
+}
+
+.profile-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 13px;
+  color: gray;
+  margin-left: 5px;
+}
+
+.profile-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-btn {
+  background-color: #1e56a0;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #e5e7eb;
+  color: black;
+}
+
+/* Footer */
+footer {
+  background-color: #4E342E;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #D4AF37;
+}

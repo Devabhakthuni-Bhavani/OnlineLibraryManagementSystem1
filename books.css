@@ -1,0 +1,193 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+body {
+   
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body fills the entire height of the viewport */
+}
+
+/* Header styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+background-color: #4b2e2e;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+}
+
+h4 {
+  font-size: 22px;     /* Slightly larger than default h4 */
+  font-weight: 600;    /* Semi-bold for emphasis */
+  margin-top: -100px;    /* Space between search bar and heading */
+  margin-bottom: 16px; /* Space below heading */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+   background-color: #4b2e2e;
+   color: white;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Page Search Styles */
+.page-search {
+  margin-top: 80px; /* Adjust to prevent overlap with fixed header */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 16px 12px 45px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+    margin-top: 5px;
+
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1; /* Ensures the main content expands and fills the remaining space */
+  margin-top: 120px; /* Space below the navbar */
+  padding: 0 40px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.book-section {
+  margin-bottom: 40px;
+}
+
+.book-grid {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.book-grid a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-grid a p {
+  color: #333; /* Default book name color */
+  transition: color 0.3s ease;
+}
+
+.book-grid a:hover p {
+  color: #D4AF37; /* Gold color or your preferred hover color */
+}
+
+
+/* Book Item Styling */
+.book-item {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+  cursor: pointer; /* Show a pointer cursor to indicate it's clickable */
+  position: relative;
+}
+
+/* Hover Effect on Book Item */
+.book-item:hover {
+  transform: scale(1.02); /* Slightly zoom in when hovering */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow */
+  transition: all 0.3s ease;
+}
+
+
+.book-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(14, 13, 13, 0.2);
+}
+
+.book-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4E342E;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #D4AF37;
+}

@@ -1,0 +1,340 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F9F5F0; /* parchment */
+    color: #2D2D2D;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    scroll-margin-top: 100px; /* Adjust based on your navbar height */
+  }
+  
+  /* Header */
+  header {
+    background-color: #4E342E; /* espresso brown */
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: #eae8e1; /* gold */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: #ffffff; /* white instead of teal */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #D4AF37; /* gold hover */
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .sidebar li {
+    margin: 20px 0;
+    list-style: none;
+  }
+
+  .sidebar li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hideOnMobile {
+      display: none;
+    }
+    .menu-button {
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  /* Hero Section */
+  .hero {
+    background-color: #F9F5F0;
+    padding: 100px 40px;
+    text-align: center;
+    min-height: 100vh; /* 👈 This ensures full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .btn {
+    background-color: #D4AF37;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #4E342E; /* dark brown hover */
+  }
+  
+  .about-section {
+    background-color: #EFE9E1;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 👈 Make it visually balanced with hero */
+  }
+  
+  
+  .about-box {
+    background-color: #fff; /* white box */
+    border: 2px solid #D4AF37; /* gold border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 16px;
+  }
+  
+  .about-box h2, .about-box h3 {
+    color: #4E342E; /* espresso brown */
+    margin-bottom: 10px;
+  }
+  
+  .about-box p {
+    color: #2D2D2D;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .support-section {
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    min-height: 100vh; /* 👈 Consistent full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .support-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .support-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .support-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  #support-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #support-form label {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  #support-form input,
+  #support-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  #support-form button {
+    background-color:#D4AF37;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #support-form button:hover {
+    background-color: #4E342E;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4E342E;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #ffffff; /* white */
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    color: #D4AF37;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 1024px) {
+    nav ul {
+      gap: 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 70px 20px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      padding: 10px 25px;
+    }
+  
+    footer {
+      padding: 20px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.95rem;
+    }
+  
+    .btn {
+      padding: 8px 20px;
+      font-size: 0.95rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    nav ul {
+      gap: 8px;
+    }
+  
+    .footer-links a {
+      display: block;
+      margin: 5px 0;
+    }
+  }
+  

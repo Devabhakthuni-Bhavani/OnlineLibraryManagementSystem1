@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f4ef;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #4b2e2e;
+  color: white;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  padding: 20px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Reduced image size */
+.image-container img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Signup box same as login */
+.signup-box {
+  background-color: white;
+  padding: 35px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1e56a0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #17408b;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #1e56a0;
+}
+
+.login-link a {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .signup-box {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 10px 0 0 0;
+  }
+}

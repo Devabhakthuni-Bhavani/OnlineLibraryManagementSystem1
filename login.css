@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  body {
+    background-color: #f5f2ed;
+    color: #333;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#4E342E;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4E342E;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #f2ece4;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo span {
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 500;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 2rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+  }
+  
+  .login-image img {
+    width: 450px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .login-form {
+    max-width: 350px;
+    width: 100%;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1e56a0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #17408b;
+  }
+  
+  .signup {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #1e56a0;
+  }
+
+  .forgot-password {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .forgot-password a {
+    color: #1E90FF;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
